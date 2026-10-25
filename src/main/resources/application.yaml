@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: client_app_liga_cifrovoy_economici
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/имя бд
+    username: юзернейм
+    password: пароль
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
